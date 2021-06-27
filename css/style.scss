@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 234, 113);
+}
+
+.header {
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(192, 56, 255);
+    &__left {
+        display: flex;
+        justify-content: center;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buy_btn {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    width: 100%;
+    color: black;
+    background: wheat;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.product {
+    box-sizing: border-box;
+    outline: whitesmoke solid 5px;
+    color: white;
+}
+
+.btn-cart {
+    background-color: rgb(220, 161, 255);
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-size: large;
+    padding: 20px 10px;
+    &:hover {
+        background-color: transparent;
+        border-color: #fafafa;
+        color: #fafafa;
+        box-sizing: border-box;
+        border: 0;
+        outline: 0;
+    }
+}
+
+.cart_Block {
+    margin-top: 20px;
+    position: absolute;
+    z-index: 1;
+    padding: 20px 10px;
+    background-color: wheat;
+    color: black;
+    width: 300px;
+}
+
+.cart__item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__right {
+        gap: 5px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+.cartImg {
+    width: 100px;
+    height: 100px;
+}
+
+.remove__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: white;
+}
